@@ -51,14 +51,11 @@ class RootViewController: UIViewController, MenuDelegate {
     
     func pan(panGesture:UIPanGestureRecognizer) {
         switch panGesture.state {
-//        case .Began:
-//            println("Began:\(panGesture.translationInView(self.view))")
         case .Changed:
-//            println("Changed:\(panGesture.translationInView(self.view))")
             var point = panGesture.translationInView(self.view)
             
             if point.x > 0 || panGesture.view!.center.x > self.view.center.x {
-            panGesture.view?.center = CGPointMake(panGesture.view!.center.x + point.x, panGesture.view!.center.y)
+                panGesture.view?.center = CGPointMake(panGesture.view!.center.x + point.x, panGesture.view!.center.y)
                 panGesture.setTranslation(CGPointMake(0, 0), inView: self.view)
             }
         case .Ended, .Failed:
@@ -90,33 +87,5 @@ class RootViewController: UIViewController, MenuDelegate {
         menuState = MenuState.Closed
         
         mainController.view.removeGestureRecognizer(self.tapRecognizer!)
-    }
-    
-    func swipeGesture(swipeRecognizer:UISwipeGestureRecognizer) {
-        var layer = mainController.view.layer
-        layer.shadowColor = UIColor.blackColor().CGColor
-        layer.shadowOffset = CGSizeMake(1, 1)
-        layer.shadowOpacity = 1
-        layer.shadowRadius = 20.0
-        
-        if swipeRecognizer.direction == UISwipeGestureRecognizerDirection.Right {
-            leftController.view.hidden = false
-            UIView.beginAnimations(nil, context: nil)
-            UIView.setAnimationCurve(UIViewAnimationCurve.EaseIn)
-            if mainController.view.frame.origin.x == self.view.frame.origin.x || mainController.view.frame.origin.x == -200 {
-                mainController.view.frame = CGRectMake(mainController.view.frame.origin.x + 200, mainController.view.frame.origin.y, mainController.view.frame.size.width, mainController.view.frame.size.height)
-            }
-            UIView.commitAnimations()
-        }
-        if (swipeRecognizer.direction == UISwipeGestureRecognizerDirection.Left) {
-            leftController.view.hidden = true
-            UIView.beginAnimations(nil, context: nil)
-            UIView.setAnimationCurve(UIViewAnimationCurve.EaseOut)
-            if mainController.view.frame.origin.x == self.view.frame.origin.x || mainController.view.frame.origin.x == 200 {
-                mainController.view.frame = CGRectMake(mainController.view.frame.origin.x - 200, mainController.view.frame.origin.y, mainController.view.frame.size.width, mainController.view.frame.size.height)
-            }
-            UIView.commitAnimations()
-        }
-        
     }
 }

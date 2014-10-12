@@ -14,6 +14,7 @@
 		B0DE4FFD19E9729A00007499 /* SideBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE4FFC19E9729A00007499 /* SideBarTests.swift */; };
 		B0DE500919E973F400007499 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE500819E973F400007499 /* RootViewController.swift */; };
 		B0DE503919E993C200007499 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE503819E993C200007499 /* MainController.swift */; };
+		B0DE503B19EA0DEB00007499 /* LeftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE503A19EA0DEB00007499 /* LeftController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B0DE4FFC19E9729A00007499 /* SideBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarTests.swift; sourceTree = "<group>"; };
 		B0DE500819E973F400007499 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		B0DE503819E993C200007499 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		B0DE503A19EA0DEB00007499 /* LeftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftController.swift; path = ../../Sidebar/SideBar/LeftController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				B0DE4FE419E9729A00007499 /* Supporting Files */,
 				B0DE500819E973F400007499 /* RootViewController.swift */,
 				B0DE503819E993C200007499 /* MainController.swift */,
+				B0DE503A19EA0DEB00007499 /* LeftController.swift */,
 			);
 			path = SideBar;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				B0DE503919E993C200007499 /* MainController.swift in Sources */,
 				B0DE4FE719E9729A00007499 /* AppDelegate.swift in Sources */,
+				B0DE503B19EA0DEB00007499 /* LeftController.swift in Sources */,
 				B0DE500919E973F400007499 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				B0DE500219E9729A00007499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0DE500319E9729A00007499 /* Build configuration list for PBXNativeTarget "SideBarTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				B0DE500519E9729A00007499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="1520" y="-368"/>
         </scene>
-        <!--View Controller-->
+        <!--Left Controller-->
         <scene sceneID="PwP-Kt-0GZ">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="S2X-tg-RWd" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="S2X-tg-RWd" customClass="LeftController" customModule="SideBar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SIj-Yy-YZ7"/>
                         <viewControllerLayoutGuide type="bottom" id="xBh-OX-cbb"/>
